@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_todo.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".TodoActivity">
+
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Name"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonSetDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTask"
+        android:layout_marginTop="16dp"
+        android:text="Set Due Date and Time" />
+
+    <TextView
+        android:id="@+id/textViewDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSetDate"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDueDate"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonProfessional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Professional" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPersonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal" />
+
+    </RadioGroup>
+
+
+    <ListView
+        android:id="@+id/listViewTasks"
+        android:layout_width="358dp"
+        android:layout_height="317dp"
+        android:layout_below="@id/buttonAddTask"
+        android:layout_marginTop="24dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/buttonAddTask"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupCategory"
+        android:layout_marginTop="10dp"
+        android:text="Add Task" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:text="Logout" />
+
+
+
+
+
+
+</RelativeLayout>

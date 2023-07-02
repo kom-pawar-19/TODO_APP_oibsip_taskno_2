@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_main.xml -->
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the To-Do App!"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="320dp"
+        android:layout_height="238dp"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_todo_logo" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="#A1783C"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Login"/>
+
+    <Button
+        android:id="@+id/buttonSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#A1783C"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Sign Up" />
+
+
+
+</RelativeLayout>
+
